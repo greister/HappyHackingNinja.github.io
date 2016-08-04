@@ -1,22 +1,77 @@
-<!doctype html>
-<html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>React Static Boilerplate</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  </head>
-  <body>
-    <div id="container"></div>
-    <script src="/dist/main.5bef0f6d2b3d6b5694b4.js"></script>
-    <script>
-      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset='utf-8' />
+		<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+		<title>Happy Hacking Ninja</title>
+		
+		<link rel="shortcut icon" href="ninja.png" />
+		<link rel="apple-touch-icon" href="ninja.png" />
+		
+		<link rel="stylesheet" href="css/maximage.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8" />
+		
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		
+		<!--[if IE 6]>
+			<style type="text/css" media="screen">
+				.gradient {display:none;}
+			</style>
+		<![endif]-->
+	</head>
+	<body>
+
+		<!-- Social Links -->
+		<!--
+		<nav class="social-nav">
+			<ul>
+				<li><a href="#"><img src="images/icon-facebook.png" /></a></li>
+				<li><a href="#"><img src="images/icon-twitter.png" /></a></li>
+				<li><a href="#"><img src="images/icon-google.png" /></a></li>
+				<li><a href="#"><img src="images/icon-dribbble.png" /></a></li>
+				<li><a href="#"><img src="images/icon-linkedin.png" /></a></li>
+				<li><a href="#"><img src="images/icon-pinterest.png" /></a></li>
+			</ul>
+		</nav>
+		-->
+
+		<!-- Switch to full screen -->
+		<button class="full-screen" onclick="$(document).toggleFullScreen()"></button>
+
+		<!-- Main Navigation -->
+		<nav class="main-nav">
+			<ul>
+				<li><a href="/wiki">Wiki</a></li>
+				<li><a href="/note">Note</a></li>
+				<li><a href="/resume">About</a></li>
+			</ul>
+		</nav>
+
+		<!-- Home Page -->
+		<section class="content show" id="home">
+			<h1>Happy Hacking Ninja</h1>
+		</section>
+
+		<div id="particles-js"></div>
+
+		
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+		<script src="js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullscreen.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.ba-hashchange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/particles.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+				console.log('callback - particles.js config loaded');
+			});
+		</script>
   </body>
 </html>
